@@ -1,0 +1,251 @@
+body {
+    overflow-x: hidden;
+}
+
+.home {
+    height: 720px;
+}
+
+.aboutus {
+    height: 720px;
+    background-color: red;
+}
+
+.gallery {
+    height: 720px;
+    background-color: green;
+}
+
+.contactus {
+    background-color: seashell;
+    padding: 100px 30px 80px;
+}
+
+.form-box {
+    margin: auto;
+    width: 920px;
+    content: "";
+    display: table;
+    border-radius: 10px;
+    border: solid 1px darkcyan;
+    background-color: aqua;
+}
+
+.form-box h3 {
+    margin-top: 80px;
+    margin-left: 140px;
+}
+
+.form-box i{
+    margin-left: 160px;
+    margin-top: 60px;
+    font-size: 80px;
+    padding: 30px;
+    color: cyan;
+    outline: auto darkcyan;
+    border: solid 6px cyan;
+    background-color: rgb(200, 255, 255);
+    border-radius: 50%;
+}
+
+.form-mobile {
+    padding: 10px;
+    background-color: lightcyan;
+    border: solid 1px darkcyan;
+    border-radius: 10px;
+}
+
+.form-mobile h3{
+    text-align: center;
+    color: darkcyan;
+}
+
+.form-mobile i{
+    font-size: 40px;
+    color: cyan;
+}
+
+.contactus .contactus-items {
+    float: right;
+    padding: 60px 20px 20px 20px;
+    border-radius: 10px;
+    width: 460px;
+    background-color: lightcyan;
+}
+
+.contactus .form-check-input {
+    border: solid 1px rgb(0, 165, 165);
+}
+
+.contactus .form-control {
+    background-color: azure;
+    border: solid 1px rgb(0, 211, 211);
+}
+
+.contactus .form-control::placeholder {
+    color: rgb(43, 43, 43);
+    opacity: 50%;
+    font-style: italic;
+}
+
+.contactus #message::placeholder {
+    color: rgb(0, 132, 255);
+    opacity: 50%;
+    font-size: large;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: azure;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 25%);
+    display: flex;
+    align-items: center;
+}
+
+nav .container-fluid {
+    margin: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 40px;
+}
+
+nav .navbar-brand {
+    align-items: center;
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+
+nav .navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 2px;
+}
+
+nav .navbar-collapse a {
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 15px;
+    transition: all .3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav .navbar-collapse a:hover {
+    color: azure;
+    background-color: rgba(0, 0, 0, 50%);
+    border-bottom: 3px solid rgb(169, 255, 255);
+}
+
+.navbar .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar .toggle-btn {
+    position: relative;
+    top: 5px;
+}
+
+.navbar .toggle-btn .bar {
+    width: 25px;
+    height: 3px;
+    margin: 7px 0 7px 0;
+    transition: all .3s ease-in-out;
+    background-color: lightslategray;
+    border-radius: 5px;
+}
+
+.navbar .toggle-btn .bar:nth-child(2) {
+    width: 28px;
+}
+
+.navbar #toggle-menu {
+    display: none;
+}
+
+.navbar #toggle-menu:checked+label.toggle-btn .bar:nth-child(2) {
+    opacity: 0;
+    transform: translate(-15px);
+}
+
+.navbar #toggle-menu:checked+label.toggle-btn .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.navbar #toggle-menu:checked+label.toggle-btn .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/*
+#sidebar {
+    position: fixed;
+    margin-top: 60px;
+    background-color: azure;
+    justify-content: end;
+    padding-bottom: 20px;
+}
+
+#sidebar a {
+    height: 50px;
+    text-align: end;
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    border: 1px solid black;
+}
+
+#sidebar i {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+*/
+
+/* Offcanvas*/
+.offcanvas {
+    width: 150px !important;
+    align-items: end;
+}
+
+.offcanvas .offcanvas-header button {
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.offcanvas .offcanvas-body a {
+    height: 50px;
+    text-align: end;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.offcanvas .offcanvas-body i {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+/*Offcanvas End*/
